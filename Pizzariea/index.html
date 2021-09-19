@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+.header_css{
+    padding-top: 32px;
+}
+.background{
+  background-image: url("images/black-texture.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer_style1{
+  padding-left: 40%;
+}
+.footer_style2{
+  padding-left: 35%;
+  padding-top: 1%;
+}
+.footer_style3{
+  padding-left: 40%;
+  padding-top: 1%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button"><img src="images/RT PIZZERIA.png" width="80px" height="80px"></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small header_css">
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="images/slide.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="container">
+  <div class="w3-content" style="max-width:1100px;">
+    <div class="w3-bar">
+      <button class="w3-bar-item w3-button" onclick="openCity('Pizza')">Pizza</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('Pasta')">Pasta</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('Sides')">Sides</button>
+    </div>
+    
+    <div id="Pizza" class="w3-container city">
+      <h2>Deluxe Toppings</h2>
+      <!-- <p>London is the capital city of England.</p> -->
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Mass Kade.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Mas Kade<br><b>LKR 2,450.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Chiecken Hellfire.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Chiecken Hellfire<br><b>LKR 2,300.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Mutton Amu.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Mutton Amu Miris<br><b>LKR 2,200.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Curry Seafood.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Curry Seafood<br><b>LKR 2,200.00</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Bacon Biththara.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Bacon Biththara<br><b>LKR 1,850.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Cheese Hatharak.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Cheese Hatharak<br><b>LKR 1,900.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Pizza Cholesterol.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Pizza Cholesterol<br><b>LKR 2,000.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Prawns Amu Miris.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Prawns Amu Miris<br><b>LKR 2,100.00</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Full Moon.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Full Moon<br><b>LKR 1,950.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Salami.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Salami<br><b>LKR 1,850.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Meat Kawalam.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Meat Kawalam<br><b>LKR 2,300.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Bacon Bim Mal.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Bacon Bim Mal<br><b>LKR 2,100.00</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Bacon Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Bacon Annasi<br><b>LKR 1,900.00</b></p>
+          </div>
+        </div>
+
+        <!-- <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/pizza/Bacon Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Bacon Annasi<br><b>LKR 1,900.00</b></p>
+          </div>
+        </div> -->
+
+        <!-- <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/pizza/Bacon Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Bacon Annasi<br><b>LKR 1,900.00</b></p>
+          </div>
+        </div> -->
+
+        <!-- <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/pizza/Bacon Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Bacon Annasi<br><b>LKR 1,900.00</b></p>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="row">
+        <div class="w3-col m12" style="padding-right: 15px;">
+          <h1>Classic Toppings</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Chicken Nai Miris.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Chicken Nai Miris<br><b>LKR 1,700.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Curry Chicken.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Curry Chicken<br><b>LKR 1,600.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Curry Polos.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Curry Polos<br><b>LKR 1,500.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Paneer Masala.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Paneer Masala<br><b>LKR 1,800.00</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Curry Pork.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Curry Pork<br><b>LKR 1,800.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Vegetable Nai Miris.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Vegetable Nai Miris<br><b>LKR 1,500.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Chicken Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Chicken Annasi<br><b>LKR 1,800.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Chicken BBQ.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Chicken BBQ<br><b>LKR 1,750.00</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Margherita Pizza.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Margherita Pizza<br><b>LKR 1,550.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/Classic Toppings/Chicken Sausage.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Chicken Sausage<br><b>LKR 1,600.00</b></p>
+          </div>
+        </div>
+
+        <!-- <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/pizza/Classic Toppings/Chicken Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Chicken Annasi<br><b>LKR 1,800.00</b></p>
+          </div>
+        </div> -->
+
+        <!-- <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/pizza/Classic Toppings/Chicken BBQ.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Chicken BBQ<br><b>LKR 1,750.00</b></p>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="row">
+        <div class="w3-col m12" style="padding-right: 15px;">
+          <h1>6" Inch Pizzas</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/6 inches/Chicken Nai Miris – 6 Inches Pan Pizza.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Chicken Nai Miris <br> 6 Inches Pan Pizza<br><b>LKR 490.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/6 inches/Paneer Masala – 6 Inches Pan Pizza.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Paneer Masala <br> 6 Inches Pan Pizza<br><b>LKR 490.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/6 inches/Curry Pork – 6 Inches Pan Pizza.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Curry Pork <br> 6 Inches Pan Pizza<br><b>LKR 490.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/pizza/6 inches/Full Moon – 6 Inches Pan Pizza.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Full Moon <br> 6 Inches Pan Pizza<br><b>LKR 550.00</b></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div id="Pasta" class="w3-container city" style="display:none">
+      <!-- <h2>Pasta</h2> -->
+      <!-- <p>Paris is the capital of France.</p>  -->
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/Pasta/Chicken Nai Miris.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Chicken Nai Miris<br><b>LKR 1,150.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/Pasta/Bacon Shroom Pineapple.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Bacon Shroom Pineapple<br><b>LKR 1,400.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/Pasta/Veggie Sarata.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Veggie Sarata<br><b>LKR 1,110.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/Pasta/Prawns Miris.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Prawns Miris<br><b>LKR 1,500.00</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/Pasta/Creamy Prawns.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Creamy Prawns<br><b>LKR 1,500.00</b></p>
+          </div>
+        </div>
+
+        <!-- <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/Pasta/Bacon Shroom Pineapple.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Bacon Shroom Pineapple<br><b>LKR 1,400.00</b></p>
+          </div>
+        </div> -->
+
+        <!-- <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/Pasta/Veggie Sarata.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Veggie Sarata<br><b>LKR 1,110.00</b></p>
+          </div>
+        </div> -->
+
+        <!-- <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/Pasta/Prawns Miris.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Prawns Miris<br><b>LKR 1,500.00</b></p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div id="Sides" class="w3-container city" style="display:none">
+      <!-- <h2>Pasta</h2> -->
+      <!-- <p>Paris is the capital of France.</p>  -->
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/Sides/Greek Salad.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Greek Salad<br><b>LKR 540.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/Sides/Garlic Roast Paan.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Garlic Roast Paan<br><b>LKR 320.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/Sides/Cheese Garlic Paan.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Cheese Garlic Paan<br><b>LKR 400.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/Sides/French Fries.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">French Fries<br><b>LKR 570.00</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/sides/Machos.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Machos<br><b>LKR 600.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/sides/Spicy Sausages.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Spicy Sausages<br><b>LKR 700.00</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <!-- <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br> -->
+            <img src="images/sides/Nai Miris French Fries.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Nai Miris French Fries<br><b>LKR 790.00</b></p>
+          </div>
+        </div>
+
+        <!-- <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/Pasta/Prawns Miris.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">Prawns Miris<br><b>LKR 1,500.00</b></p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    
+    <div id="Tokyo" class="w3-container city" style="display:none">
+      <h2>Tokyo</h2>
+      <p>Tokyo is the capital of Japan.</p>
+      <div class="row">
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/pizza/Bacon Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">+94 112 943 943<br>+94 782 563 459</p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/pizza/Bacon Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">+94 112 943 943<br>+94 782 563 459</p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/pizza/Bacon Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">+94 112 943 943<br>+94 782 563 459</p>
+          </div>
+        </div>
+
+        <div class="w3-col m3" style="padding-right: 15px;">
+          <div class="w3-panel w3-card-2">
+            <i class="fa fa-phone" style="font-size:24px; padding-left: 45%; padding-top: 10%;"></i><br>
+            <img src="images/pizza/Bacon Annasi.png" style="width:100%; height:100%; padding-top: 10%;">
+            <p style="padding-bottom: 5%; text-align: center;">+94 112 943 943<br>+94 782 563 459</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    function openCity(cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      document.getElementById(cityName).style.display = "block";  
+    }
+    </script>
+    
+  </div>
+</div>
+<!-- Footer-->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <div class="w3-row footer_style1">
+      <div class="w3-col m4"></div>
+      <div class="w3-col m4"><img src="images/RT PIZZERIA.png" width="80px" height="80px"></div>
+      <div class="w3-col m4"></div>
+  </div>
+  <div class="w3-row footer_style2">
+    <div class="w3-col m3"></div>
+    <div class="w3-col m3"><i class="fa fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;</i>+94 112 943 943</div>
+    <div class="w3-col m3"><i class="fa fa-clock-o">&nbsp;&nbsp;&nbsp;&nbsp;</i>Hours 11am to 10pm</div>
+    <div class="w3-col m3"></div>
+</div>
+<div class="w3-row footer_style3">
+  <div class="w3-col m4"></div>
+  <div class="w3-col m4"><i class="fa fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-instagram"></i></div>
+  <div class="w3-col m4"></div>
+</div>
+  <p>Copyright © 2020 RT  Pizzeria. All Rights Reseverd | Web Design & Development by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Pixelma</a></p>
+</footer>
+
+</body>
+</html>
+           

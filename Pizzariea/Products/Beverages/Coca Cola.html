@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+.header_css{
+    padding-top: 32px;
+}
+.background{
+  background-image: url("images/black-texture.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer_style1{
+  padding-left: 40%;
+}
+.footer_style2{
+  padding-left: 35%;
+  padding-top: 1%;
+}
+.footer_style3{
+  padding-left: 40%;
+  padding-top: 1%;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button"><img src="../../images/RT PIZZERIA.png" width="80px" height="80px"></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small header_css">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="About.html" class="w3-bar-item w3-button">About</a>
+        <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+        <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:100px" id="home">
+  <img class="w3-image" src="../../images/slide_aboutus.jpg" alt="Hamburger Catering" width="1600" height="100">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="container">
+  <div class="w3-content" style="max-width:1100px;">
+
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="../../images/Beverages/Coca Cola.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+      </div>
+
+      <div class="w3-col m6 w3-padding-large">
+        <h1>Coca Cola</h1><br>
+        <h5>LKR 120.00</h5>
+        <!-- <p>Pork, onions & green chili with curry sauce.</p> -->
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" style="padding-top: 4px; padding-bottom: 4px;">
+        <input type="submit" class="button" value="Call Now">
+        <p><b>Categories:</b></p><p style="color: red;">Beverages</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <div class="w3-row footer_style1">
+      <div class="w3-col m4"></div>
+      <div class="w3-col m4"><img src="../../images/RT PIZZERIA.png" width="80px" height="80px"></div>
+      <div class="w3-col m4"></div>
+  </div>
+  <div class="w3-row footer_style2">
+    <div class="w3-col m3"></div>
+    <div class="w3-col m3"><i class="fa fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;</i>+94 112 943 943</div>
+    <div class="w3-col m3"><i class="fa fa-clock-o">&nbsp;&nbsp;&nbsp;&nbsp;</i>Hours 11am to 10pm</div>
+    <div class="w3-col m3"></div>
+</div>
+<div class="w3-row footer_style3">
+  <div class="w3-col m4"></div>
+  <div class="w3-col m4"><i class="fa fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-instagram"></i></div>
+  <div class="w3-col m4"></div>
+</div>
+  <p>Copyright © 2020 RT  Pizzeria. All Rights Reseverd | Web Design & Development by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Pixelma</a></p>
+</footer>
+
+</body>
+</html>
